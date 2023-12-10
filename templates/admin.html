@@ -1,0 +1,97 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART SCHOOL SOLUTION</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+        <header>
+            <ul>
+                <li><a href="#sets">Sets</a></li>
+                <li><a href="tuple">Tuples</a></li>
+                <li><a href="dict">Dictionaries</a></li>
+                <li><a href="list">Lists</a></li>
+                <li><a href="home">Home</a></li>
+            </ul>
+        </header>
+        <div>
+    <h1>Data Structures in Python</h1>
+        <p>Python has been used worldwide for different fields such as making websites, 
+            artificial intelligence and much more. But to make all of this possible, 
+            data plays a very important role which means that this data should be
+             stored efficiently and the access to it must be timely.
+             So how do you achieve this? We use something called Data Structures.</p>
+        <h3>Data Structures and Types</h3>
+            <p>Organizing, managing and storing data is important as it enables easier access and efficient modifications.
+                 Data Structures allows you to organize your data in such a way that enables you to store collections of data,
+                 relate them and perform operations on them accordingly. Python has implicit support for Data Structures which 
+                 enable you to store and access data. These structures are called List, Dictionary,Bytearrays,Strings, Tuple, Sets and Frozen Set.
+
+                 Python allows its users to create their own Data Structures enabling them to have full control over 
+                 their functionality.
+                  The most prominent Data Structures are Stack, Queue, Tree, Linked List and so on which are also available to you 
+                  in other programming languages. So now that you know what are the types available to you,
+                  why don’t we move ahead to the Data Structures and implement them using Python. </p>
+        <img src="{% static "media/datast.png" %}" alt="home">
+            </div>
+            <form method="post" action="home">
+            {% csrf_token %}
+            <div>
+                <input type="text" name="name" placeholder="Enter your name here">
+            </div>
+            <div>
+                <input type="text" name="name_2" placeholder="Enter second participant name">
+            </div>
+            <div>
+                <span>{{ error_message}}</span>
+            </div>
+            <div>
+                <input type="text" name="email" placeholder="Enter your email">
+            </div>
+            <div>
+                <input type="tel" name="phone" placeholder="Enter Phone Number">
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+
+    <style>
+        body {
+    background-color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: -9px;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkgray;
+  }
+  
+  li {
+    
+    font-style: normal;
+  }
+  
+  li a {
+    display: inline;
+    float: right;
+    padding: 8px;
+    text-decoration: none;
+    background-color: darkgrey;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+ li a:hover {
+  background-color: #407BFF;
+}
+h1 {
+    text-align: center;
+}
+    </style>
+    </body>
+</html>
+{% load static %}

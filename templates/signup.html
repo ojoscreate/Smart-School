@@ -1,0 +1,548 @@
+{% load static %}
+<html lang="en">
+	<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Register: SMART SCHOOL CONFERENCE 2023</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="logitech, proxynet, casdnet, conference, video conference, rally, Logitech video conference solutions, video conference solutions, logitech resellers, resellers, lagos">
+    <link rel="icon" href="../static/media/img/favicon.ico">
+
+    <link href="ico/N-1.png" rel="shortcut icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="https://d33wubrfki0l68.cloudfront.net/bundles/375090a94a80ef2e25c27f3e0b75c31d911887bd.css">
+    <link rel="stylesheet" href="../static/style.css">
+
+       <!-- <link rel="stylesheet" href="css/bundle.css"> -->
+	<script charset="UTF-8" src="//web.webpushs.com/js/push/74c19e42e77ba733e4c5016c551f42c9_1.js" async=""></script>
+  <script src="https://d33wubrfki0l68.cloudfront.net/bundles/60eb374e57ccf760ff5312b768cebc647d57476e.js"></script>
+    
+ <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+ <script type="text/javascript" src="widgets/mixitup/mixitup.js"></script>
+ <script type="text/javascript" src="widgets/mixitup/images-loaded.js"></script>
+ <script type="text/javascript" src="widgets/mixitup/isotope.js"></script>
+ <script type="text/javascript" src="widgets/mixitup/portfolio-demo.js"></script>
+ 
+   
+   <style>
+
+$font-family:   "Roboto";
+$font-size:     14px;
+
+$color-primary: #ABA194;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.user {
+    width: 100%;
+    max-width: 450px;
+    margin: 10vh auto;
+}
+
+.user__header {
+    text-align: center;
+    opacity: 0;
+    transform: translate3d(0, 500px, 0);
+    animation: arrive 500ms ease-in-out 0.7s forwards;
+}
+
+.user__title {
+    /*font-size: $font-size;*/
+    margin-bottom: -50px;
+    font-weight: 500;
+    color: white;
+}
+.user__title2 {
+    font-size: 18px;
+    margin-bottom: -10px;
+    font-weight: 500;
+    color: white;
+}
+
+.form {
+    margin-top: 40px;
+    border-radius: 6px;
+    overflow: hidden;
+    opacity: 0;
+    transform: translate3d(0, 500px, 0);
+    animation: arrive 500ms ease-in-out 0.9s forwards;
+}
+
+.form--no {
+    animation: NO 1s ease-in-out;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+.form__input {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    /*font-family: $font-family;*/
+    -webkit-appearance: none;
+    border: 0;
+    outline: 0;
+    transition: 0.3s;
+    border-bottom:1px solid #ccc;
+    &:focus {
+        background: darken(#fff, 3%);
+    }
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    font-family: 14px;
+    -webkit-appearance: none;
+    outline: 0;
+    border: 0;
+    color: #fff;
+    background: #407BFF;
+    transition: 0.3s;
+	
+	background: #407BFF;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    
+    &:hover {
+        background: darken($color-primary, 5%);
+    }
+}
+
+@keyframes NO {
+  from, to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+@keyframes arrive {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 50px, 0);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes move {
+    0% {
+        background-position: 0 0
+    }
+
+    50% {
+        background-position: 100% 0
+    }
+
+    100% {
+        background-position: 0 0
+    }
+}
+
+.form__input {
+    display: block;
+    width: 100%;
+    padding: 15px;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<style>
+    body {
+      margin: 0;
+      padding: 0;
+      /*
+      font-family: Mont;
+      font-size: 17px;
+      */
+      font-family: system-ui;
+      font-size: 20px;
+      background-color: #fff;/* #0c63ce; #04234a;*/;
+      color: #777;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+     
+    }
+    .navbar.sticky {
+      background-image:  radial-gradient(
+        ellipse at -11.25% -5.47%, 
+        rgb(255, 255, 255,0.9) 0%, 
+        rgb(148, 175, 238,0.9) 30.21%, 
+        rgb(255, 255, 255,0.9) 80.27%); /*#407BFF;#04234a;*/
+    }
+    .navbar{
+      background: radial-gradient(
+        ellipse at -11.25% -5.47%, 
+        rgb(255, 255, 255,0.9) 0%, 
+        rgb(148, 175, 238,0.9) 30.21%, 
+        rgb(255, 255, 255,0.9) 80.27%); ;
+    }
+	.slider a {
+		display: inline-block;
+		height: 50px;
+		line-height: 50px;
+		padding: 0 30px;
+		background: #407BFF;
+		color: #0b0b0b;
+		font-size: 13px;
+		font-weight: 600;
+		margin-bottom: 10px;
+	    border-radius: 50px;
+	}
+	.transparent{
+		    -webkit-text-stroke: 1px #407BFF !important;
+			-webkit-text-fill-color: #407BFF !important;
+      text-shadow: 0 0.2px 2px #031b4f;
+    
+	}
+	@media only screen and (max-width: 1300px), only screen and (max-device-width: 1300px){
+  .slider h2 {
+      font-size: 40px;
+      margin-top: 50px;
+      margin-left: 0;
+    }
+  }
+	
+	.slider h2 {
+		font-size: 45px;
+		font-weight: 800;
+		margin-top: 60px;
+		margin-bottom: 20px;
+	}
+	.footer h3 {
+		-webkit-text-stroke: 1px #407BFF !important;
+		text-stroke: 1px #407BFF !important;
+		-webkit-text-fill-color: transparent;
+		color: transparent;
+		font-weight: bolder;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	.footer .scroll-top {
+		width: 100px;
+		background: #407BFF !important;
+		position: absolute;
+		right: 30px;
+		top: -30px;
+		z-index: 1;
+		color: #777;
+		text-align: center;
+		padding: 15px 0;
+	}
+  .scroll-top{
+    color: #f9faf9 !important;
+    background-color: #407BFF !important; 
+     padding: 5px 0 !important;
+     align-items: center !important;
+     justify-content: center !important;
+     
+  }
+	.footer address a {
+		display: inline-block;
+		color: #777;
+		font-weight: 600;
+		font-size: 15px;
+		border-bottom: 3px solid #407BFF;
+	}
+	.info .first {
+		text-align: left;
+		border-right: 1px solid #407BFF;
+	}
+	.footer ul li i {
+		font-size: 20px;
+		color: #777;
+		border-bottom: 2px solid #407BFF;
+		padding: 10px;
+		transition: .3s;
+	}
+	.footer {
+		width: 100%;
+		display: block;
+		background-color: #407BFF;/*#04234a;*/
+		position: relative;
+		padding-top: 80px;
+		color: #777;
+	}
+	.footer .scroll-top {
+		width: 100px;
+		background: #407BFF;
+		position: absolute;
+		right: 30px;
+		top: 30px;
+		z-index: 1;
+		color: #fff;
+		text-align: center;
+	    padding: 5px 0; 
+	}
+	::-webkit-scrollbar-thumb {
+		background: #407BFF !important;
+	}
+	.footer h3 {
+		-webkit-text-stroke: 1px #407BFF;
+		text-stroke: 1px #407BFF;
+		-webkit-text-fill-color: #407BFF;
+		color: transparent;
+		font-weight: bolder;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	.info li {
+        list-style-type: disc; 
+		margin-left: 40px;
+		margin-bottom: 10px;
+	}
+	hr {
+		border-bottom: 1px solid #407BFF;
+		width: 30%;
+		margin-top: 30px;
+	}
+	
+	.navbar .logo a img {
+		height: 60px;
+	}
+	</style>
+  </head>
+  <body>
+    <div class="first-transition"></div>
+    <!-- end first-transition -->
+
+    <!-- end navbar -->
+   
+    <!-- end content-section -->
+	   <aside class="side-widget">
+      <div class="inner">
+        <div class="logo">
+          <a href="../templates/index.html"><img src="../static/media/proxynet.png" style="" alt="Image"></a>
+        </div>
+       
+        <div class="show-mobile">
+          <div class="site-menu">
+            <ul>
+              <li ><a href="./index.html" class="site-menu">HOME </a></li>
+            </ul>
+          </div>
+       
+        </div>
+    
+        <small>© 2022 Proxynet Technology Experience </small>
+      </div>
+
+    </aside>
+  
+    <nav class="navbar sticky nav-down">
+      <div class="container">
+        <div class="logo" style="width: 100;"> 
+          <!-- <a href="#"><img src="{% static "media/ispace-logo.png" %}"style="margin-left:-10px" alt="Image"></a> -->
+          <a href="#"><img src="../static/media/ispace-logo.png"style="margin-left:-10px" alt="Image"></a>
+        </div>
+        
+        <div class="site-menu">
+          <ul>
+            <li id="navigate"><a 
+              class="site-l-menu"  href='./index.html'>HOME </a></li>
+          </ul>
+        </div>
+
+        <div class="hamburger d-lg-none d-xl-none">
+          <div id="hamburger"><span></span> <span></span> <span></span></div>
+          <div id="cross"><span></span> <span></span></div>
+        </div>
+      </div>
+    </nav>
+	<br/><br/><br/>
+    <section class="content-section whyAttend" id="top">
+      <div class="container">
+        <div class="row">
+		 <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <h2 >
+             REGISTER FOR<br/><br>
+			  
+              <b class="transparent big-font">SMART BOARDS SOLUTIONS <br/>CONFERENCE <span class="f-2023">2023</span> </b>
+            </h2>
+            <br>
+			<h4>This registration admit only two persons</h4>
+          </div>
+		  <div class="col-md-3"></div>
+          <div class="col-md-6" id="page" >
+            
+           
+			<form class="form" method="post" action="signup" id="form-1">
+				{% csrf_token %}
+				<div id="error" style="color:rgb(163, 6, 6); text-align:center"> </div>
+					
+					<div class="form__group">
+						<input type="text" placeholder="NAME OF PARTICIPANT" id="participant" name="name" required class="form__input" />
+					</div>
+					<div class="form__group">
+						<input type="text" placeholder="NAME OF SECOND PARTICIPANT (OPTIONAL)" id="second_participant" name="name_2" required class="form__input" />
+					</div>
+          <div class="form__group">
+						<input type="text" placeholder="PARTICIPANT SCHOOL NAME  " id="school_name" name="name_2" required class="form__input" />
+					</div>
+					<div>
+						<span>{{ error_message}}</span>
+					</div>
+					<div class="form__group">
+						<input type="text" placeholder="EMAIL" id="email" name="email"  name required class="form__input" />
+					</div>
+					
+					
+					<div class="form__group">
+						<input type="number" placeholder="PHONE" id="phone" name="phone" required class="form__input" />
+					</div>
+					
+          <a href="./main.html" class="sign-up-btn"><button class="btn" type="submit" value="Submit" >REGISTER </button></a>
+					
+			</form>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <!-- WHY ATTEND -->
+   
+	
+    <!-- end footer-bar -->
+    <footer id="contact" class="footer">
+      <h3>CONTACT INFO</h3>
+      <div class="container">
+        <div class="row">
+          
+		        <div class="col-lg-4 col-md-6">
+            <h6 class="widget-title">TEL:</h6>
+            <address>
+              <a href="tel:+2348124019660">Ispace: +2348124019660</a>
+              <br>
+              <br>
+              <a href="tel: +234 809 422 1272">Ms Paschaline:  +234 809 422 1272</a> 
+			  <br>
+              
+            </address>
+          </div>
+          <!-- end col-4 -->
+          <div class="col-lg-4 col-md-6">
+            <h6 class="widget-title">E-MAIL</h6>
+            <address>
+              <p>
+                <a href="mailto:ispace@proxynetgroup.com">ispace@proxynetgroup.com</a>
+                <br>
+				<br/>
+                <a href="mailto:paschalinea@proxynetgroup.com">paschalinea@proxynetgroup.com</a>
+                <br>
+               
+              </p>
+            </address>
+          </div>
+		  
+          <div class="col-lg-4 col-md-6">
+            <h6 class="widget-title">SOCIALS</h6>
+            <ul>
+              <li>
+                <a href=" https://www.linkedin.com/in/ispace-academy-645345181/" target="_blank" ><i class="fa fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="https://facebook.com/proxynetcommunications/" target="_blank"  ><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href=" https://instagram.com/ispaceclub?igshid=NTc4MTIwNjQ2YQ== target="_blank" " target="_blank"  ><i class="fa fa-instagram"></i></a>
+              </li>
+           
+            </ul>
+          </div>
+          <!-- end col-4 -->
+
+
+          <div class="col-12">   
+            <div class="footer-bottom">
+				<a href="https://proxynetgroup.com"><img src="../static/media/proxynet.png" style="margin-left:-20px" alt="Image"></a><br/>
+              <span>© <?=date("Y")?> Proxynet Communications Limited | All rights reserved</span>
+            </div>
+            <!-- end footer-bottom -->
+          </div>
+          <!-- end col-12  -->
+        </div>
+        <!-- end row -->
+      </div>
+      <!-- end container -->
+      <a href="#" class="scroll-top"><i class="lni lni-arrow-up"></i> <small>Scroll Up</small>
+      </a>
+      <!-- end scroll-top -->
+    </footer>
+
+</body>
+<script>
+
+const button = document.querySelector('.btn')
+const form   = document.querySelector('.form')
+console.log(form)
+button.addEventListener('click', function() {
+		
+		let inputs = document.getElementsByClassName("form__input");	
+		let email = document.querySelector("#email").value;
+		let participant = document.querySelector("#participant").value;
+		let participant2 = document.querySelector("#second_participant").value;
+		let phone = document.querySelector("#phone").value;
+		//let dt = document.querySelector("#date").value;
+		//let location = document.querySelector("#location").value;
+
+		if(participant==""){
+			document.querySelector("#error").innerHTML = "Please fill participant field";
+			return false;
+		}else if(phone==""){
+			document.querySelector("#error").innerHTML = "Please fill phone field";
+			return false;
+		}else if(email.indexOf("@")<1){
+			document.querySelector("#error").innerHTML = "Please provide a valid email address";
+			return false;
+		}else if(phone.length<9){
+			document.querySelector("#error").innerHTML = "Please provide a valid phone number";
+			return false;
+		}
+	
+		document.querySelector(".btn").innerHTML = "Please wait ...";
+		document.querySelector(".btn").disabled = true;
+		
+		document.getElementById("form-1").submit();
+		//form[0].submit();
+		
+		/*
+		$.post('register.php', {company:company,participant:participant,participant2:participant2, date:"",email:email,phone:phone,register:"sub"}, function(response){ 
+			 if(response=="done"){
+				 var extra = '';
+				document.querySelector("#page").innerHTML = '<div style="border-radius:5px; color:#000; font-size:32px; padding:50px; background:#fff" ><center>Dear '+company+', <br/>Thank you for registering for SMART SCHOOL SOLUTIONS CONFERENCE 2023. Please note we will send you a reminder few days before the event. Regards.</center>';
+			 }else{
+				 document.querySelector("#page").innerHTML = '<div style="border-radius:5px; color:#000; font-size:32px; padding:50px; background:#fff" ><center>'+response+'</center>';
+			 }
+			 
+		});
+		*/
+		
+		
+});
+
+</script>
+</html>
+{% load static %}

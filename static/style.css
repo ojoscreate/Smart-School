@@ -1,0 +1,293 @@
+body {
+  background-color: #fff !important;
+    font-family: verdana;
+  }
+
+/* ---------PoP up menu------------ */
+
+ #custom-overlay{
+  position:fixed; 
+  top:0px; 
+  right:0px;
+  bottom:0px; 
+  left:0px; 
+  z-index: 1000;
+  background:rgba(0,0,0,0.5);
+  margin: 0 auto;
+
+} 
+#overlay{
+  position: relative;
+  width: 700px !important;
+  height: auto !important;
+  background-image: radial-gradient(
+    ellipse at -11.25% -5.47%, 
+    rgb(255, 255, 255,0.9) 0%, 
+    rgb(148, 175, 238,0.9) 30.21%, 
+    rgb(255, 255, 255,0.9) 80.27%) !important;
+  z-index: 1100;
+  margin:100px auto;
+  border-radius: 7px;
+  box-sizing: border-box;
+  padding: 3%;
+}
+
+.wel-speech{
+  width: auto !important;
+  height:auto !important ;
+  font-size: 20px !important;
+  text-align: center;
+}
+
+.location{
+  color: initial;
+  text-shadow:  #1D49E3 0 0.1px 1px;
+}
+
+#select_location{
+  width: 60% !important;
+  border-radius: 9px !important;
+  text-align: center;
+  background-color: transparent;
+  border: #eef0ef solid 1px;
+  text-shadow:  #1D49E3 0 0.1px 1px;
+  box-shadow: #1D49E3 0 0.1px 3px;
+
+}
+.option::backdrop{
+  background-color: #1D49E3 !important;
+}
+
+@media (min-width:130px) and (max-width:950px) {
+  #overlay{
+    padding: 3%;
+    height: auto !important;
+    width: 85% !important;
+    margin: 20px auto;
+  }
+  .wel-speech{
+    width: 90% !important;
+    height:auto !important;
+    font-size: 18px !important;
+    text-align: center;
+  }
+  .big-font{
+    font-size: 39px !important;
+  }
+}
+
+
+  /* -------------------NAVIGATION-------------------- */
+  #hamburger, #cross{
+    background-image:radial-gradient(
+      ellipse at -11.25% -5.47%, 
+      rgb(64, 123, 255) 0%, 
+      rgb(64, 123, 255) 30.21%, 
+      rgb(64, 123, 255)80.27%) ;
+  }
+  .side-widget{
+    background-image: radial-gradient(
+      ellipse at -11.25% -5.47%, 
+      rgb(255, 255, 255,0.9) 0%, 
+      rgb(148, 175, 238,0.9) 30.21%, 
+      rgb(255, 255, 255,0.9) 80.27%);
+      /* color: rgb(64, 123, 255) !important; */
+  }
+
+  .site-l-menu, .site-menu{
+    text-decoration: none;
+    list-style: none;
+    color: rgb(64, 123, 255) !important ;
+    text-shadow:  #1D49E3 0 0.1px 1px;
+  }
+
+  .site-l-menu:hover{
+    font-weight: 600;
+		border-bottom: 3px solid #407BFF;
+  }
+
+  #navigate:hover{
+    text-decoration: none;
+    color: transparent;
+    border-bottom: none;
+
+  }
+
+  #navi{
+    color:#1D49E3 !important;
+  }
+  .show-mobile {
+    color: #407BFF;
+
+  }
+ 
+/* ---------------------HEADER---------------------- */
+  header{
+        background-image: 
+        radial-gradient(
+      ellipse at -11.25% -5.47%, 
+      rgb(255, 255, 255,0.9) 0%, 
+      rgb(148, 175, 238,0.9) 30.21%, 
+      rgb(255, 255, 255,0.9) 80.27%
+    ),
+    url("../static/media/sliders/1.jpg") !important;
+    background-size: cover !important;
+    background-repeat:no-repeat !important;
+  }
+
+  .transparent{
+    text-shadow: #407BFF 0 0 5px;
+  }
+
+  .f-2023{
+    color: #263238 !important;
+    -webkit-text-fill-color: #263238 !important;
+    text-stroke: 1px #263238 !important;
+    text-shadow: none !important;
+    border: none !important;
+  }
+  .main-text{
+    text-shadow: 0 0 2px #032772;
+  }
+
+.con-btn{
+  padding : 10px 80px 10px 70px !important;
+  margin-left: 10px !important;
+  margin-right: 20px !important;
+  background: #fff !important;
+  color: #201313 !important;
+   width: auto;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    line-height: normal !important;
+}
+
+.main-btn{
+  margin:20px auto 30px !important;
+  width: auto !important;
+  height: 67px !important;
+  font-size: 16px;
+  padding : 10px 80px 10px 70px !important;
+
+}
+.con-btn:hover,
+.reg-btn:hover{
+  text-shadow: 0 0 02px #1D49E3 !important;
+}
+
+  .reg-btn{
+    background-color:c !important;
+    color: white !important;
+  }
+  /* --------------countdown-------- */
+  .countdown{
+    display:block;
+    left:0;
+    width:500px;
+    height:100px;
+    position:relative;
+    padding-bottom:5%;
+    margin:0 auto;
+    border-radius: 7%;
+  }
+  .buttons{
+    display: inline-flex;
+  }
+
+ 
+  @media (min-width:900px) {
+    .countdown{
+      display: none;
+    }
+    .countdown2{
+      margin: auto;
+      width: 80%;
+    }
+   
+  }
+
+/* --------------about---------- */
+@media (min-width:100px) and (max-width: 900px) {
+ .buttons{
+  flex-direction: column;
+ }
+  .ispace-logo{
+    width: 100px;
+  }
+  .cont-btn{
+    width:10px auto;
+    margin: auto;
+    font-size: system;
+  }
+  .con-btn,
+.reg-btn{
+  width: 70%;
+  margin: auto;
+  font-size: 15px !important;
+}
+
+  .con-btn:hover,
+.reg-btn:hover{
+  font-size: 16px !important;
+}
+  .logo{
+    width: 100px;
+  }
+  #about{
+  /* margin-top: 100px;  */
+  font-size: 16px;
+  width: 90%;
+  margin: auto;
+}
+.countdown{
+  width: 70%;
+  margin: auto;
+}
+.countdown2{
+  display: none;
+  margin: auto;
+}
+}
+
+
+  /* -------footer--- */
+  .footer{
+    background-color: #f9faf9 !important;
+    width: 100%;
+    color: #777;
+  }
+ 
+
+  .footer-bottom{
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-evenly !important;
+    align-self: auto;
+    background-color: #eef0ef;
+    margin: none;
+  
+  }
+
+  .link:hover{
+    color: #407BFF !important;
+    border-color: #407BFF !important;
+    font-weight: 600;
+		border-bottom: 3px solid #407BFF !important;
+  }
+
+  .fa:hover{
+    font-weight: 600;
+		border-bottom: 3px solid inherit !important;
+    color: #407BFF !important;
+  }
+
+  /* --------------SIGN-UP-PAGE----------------- */
+
+  .sign-up-btn{
+    text-decoration: none;
+  }
+
+  .sign-up-btn:hover{
+    text-decoration: none;
+  }
