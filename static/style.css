@@ -5,7 +5,7 @@ body {
 
 /* ---------PoP up menu------------ */
 
- /* #custom-overlay{
+ #custom-overlay{
   position:fixed; 
   top:0px; 
   right:0px;
@@ -15,7 +15,7 @@ body {
   background:rgba(0,0,0,0.5);
   margin: 0 auto;
 
-}  */
+} 
 #overlay{
   position: relative;
   width: 700px !important;
