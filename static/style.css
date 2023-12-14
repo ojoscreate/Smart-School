@@ -354,7 +354,7 @@ body {
     flex-direction: column !important;
   }
   .inner,.inner2{
-    margin: auto !important;
+    margin:10px auto !important;
   }
 }
 
