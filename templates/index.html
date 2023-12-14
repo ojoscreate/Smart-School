@@ -114,11 +114,14 @@
    
 	}
 	.navbar.sticky {
-		background-image:  radial-gradient(
+		/*background-image:  radial-gradient(
       ellipse at -11.25% -5.47%, 
       rgb(255, 255, 255,0.9) 0%, 
       rgb(148, 175, 238,0.9) 30.21%, 
       rgb(255, 255, 255,0.9) 80.27%); /*#407BFF;#04234a;*/
+      background-color: rgb(56,135,226);
+     /* background-color: initial;*/
+      /*border: solid rgba(56,135,226, .4) 0.2px;*/
 
 	}
 	.slider a {
@@ -190,12 +193,12 @@
  
 	.info .first {
 		text-align: left;
-		border-right: 1px solid#407BFF;
+		border-right: 1px solid#407BFF !important;
 	}
 	.footer ul li i {
 		font-size: 20px;
 		color: #777;
-		border-bottom: 2px solid #407BFF;
+		border-bottom: 2px solid #407BFF !important;
 		padding: 10px;
 		transition: .3s;
 	}
@@ -253,7 +256,7 @@
 		margin-top: 30px;
 	}
 	.navbar {
-		background: initial /*rgb(64, 123, 255) #407BFF*/;
+		background:  rgb(64, 123, 255) /*#407BFF*/;
 
   }
 	@media only screen and (max-width: 1499px), only screen and (max-device-width: 1499px){
@@ -292,8 +295,8 @@
       
     .normal-font{
       font-size: 20px;
-      text-shadow: 0 2px 10px #031b4f !important;
-
+      text-shadow: 0 3.5px 50px #407bff !important;
+      color:#4d5865;
     }
 	
 
@@ -470,12 +473,14 @@
     </nav>
               
     <!-- end navbar -->
-   <header class="slider slideit" > 
-	   <br/>
+  <header class="slider slideit" > 
+	   <div class="header"> 
+      
+      <br/>
       <div class="container" style = "padding-top:30px; margin: auto;">
 			<br/>
 			
-		<div class="col-md-5">
+		<div class="col-md-5" style="margin: auto ;">
 		  <br/>
           <h2 >
             <b class="transparent big-font">
@@ -507,7 +512,7 @@
 
      </div>
 		<div class="col-md-5" style="padding:1%; margin: auto; padding-top:0px">
-			  <img src= "../static/media/smart screen.jpg" class="banner-img" style="width:90%; border-radius:15px; width: 350px; margin-top:0px !important " alt="IMAGE"> 
+			  <img src= "../static/media/smart screen.jpg" class="banner-img imge-banner"  alt="IMAGE"> 
 			  			
 			  <!--
 			   <div class="thumb-img">
@@ -525,9 +530,10 @@
       </div>
 	  
       <!-- end container -->
+  </div>   
+</header>
     
-
-    </header>
+    
     <!-- ---------------Pop-up---------- -->
     
     <div class="first-transition"></div> 
@@ -574,7 +580,49 @@
      </div>
    
     <hr>
-	<br/><br/>
+	<br/>
+ <section class="content-section sponsorship" id="sponsors">
+    <div class="container">
+      <h1>TECHNOLOGY PARTNERS</h1>
+      <br>
+       <marquee behavior="scroll"  direction="right" class="slides1">
+        <!-- <div class="row first-row"> -->
+ 
+    <!-- <div class="col-lg-4 col-md-12"> -->
+          <img src="../static/media/img/clients/zoom logo.jpg" alt="Zoom" class="clients">
+        <!-- </div> -->
+   <!-- <div class="col-lg-4 col-md-12"> -->
+          <img src="../static/media/proxynet.png"  alt="proxynet" class="clients">
+        <!-- </div> -->
+        <!-- <div class="col-lg-4 col-md-12"> -->
+          <img src="../static/media/SMART_Technologies_logo_richblack.webp"   alt="smart technologies" class="clients">
+        <!-- </div> -->
+        <!-- <div class="col-lg-4 col-md-12"> -->
+          <img src="../static/media/img/clients/maxhub logo.jpeg"   alt="maxhub" class="clients">
+        <!-- </div> -->
+        <!-- <div class="col-lg-4 col-md-12"> -->
+          <img src="../static/media/img/clients/makeblock-logo.png"   alt="makeblock" class="clients">
+        <!-- </div> -->
+         <!-- <div class="col-lg-4 col-md-12"> -->
+          <img src="../static/media/img/clients/logitech-logo.png"   alt="logitech" class="clients">
+        <!-- </div> --> 
+        <!-- <div class="col-lg-4 col-md-12"> -->
+          <img src="../static/media/img/clients/samsung-logo.png"   alt="samsung" class="clients">
+        <!-- </div> -->
+        <!-- <div class="col-lg-4 col-md-12"> -->
+          <img src="../static/media/img/clients/twin-science logo.png"   alt="twin-science" class="clients">
+        <!-- </div> -->
+        <!-- <div class="col-lg-4 col-md-12"> -->
+          <img src="../static/media/img/clients/photon logo_90h.png"   alt="photon" class="clients">
+        <!-- </div> -->
+
+      </div>
+    </marquee>
+    </div>
+  </section>
+
+  <br>
+  <hr>
 	   <section class="content-section no-spacing" id="about">
       
       <div class="container">
@@ -658,12 +706,12 @@
 
           </div>
 		  
-		   <div class="col-md-12">
+		   <div class="col-ld-12 col-md-12">
 		  <br/><br/>
             <p>           
 			  <center>TO REGISTER KINDLY CLICK ON THE BUTTON BELOW </center>
             </p>
-			<div class="buttons slider" style="padding-bottom:0px; height:100px">
+			<div class="buttons slider" style="padding-bottom:0px;margin: auto; height:100px">
 		  <!--
             <a href="#" target="_blank"
               >Download Event Program<i class="lni lni-arrow-right"></i
@@ -846,7 +894,7 @@
 	
     <!-- SPEAKERS SECTION -->
 
-    <section class="content-section" id="speakers">
+    <!-- <section class="content-section" id="speakers">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -940,7 +988,7 @@
         </div>
 		
 		</div>
-    </section>
+    </section> -->
    
 	<!--
 	<section class="content-section sponsorship sponsor" >
@@ -973,133 +1021,122 @@
     </section>
 	-->
 	<br/>
-    <section class="content-section sponsorship" id="sponsors">
-      <div class="container">
+   <section class="content-section sponsorship" id="sponsors">
+      <!-- <div class="container"> -->
         <h1>EXISTING CUSTOMERS</h1>
         <br>
         <br>
         <div class="row first-row">
-          <div class="col-lg-3 col-md-12"> 
-            <img src= "../static/media/img/clients/aisa.png" style="width:142px !important; margin: auto;" alt="AISA school">
-          </div>
-		  <div class="col-lg-3 col-md-12"> 
-            <img src="../static/media/img/clients/nouveau.jpg" style="width:142px !important; height: 142px; margin: auto;" alt="Nouveau school">
-          </div>
+          <marquee  behavior="scroll" direction="right" class="slides">
+          <!-- <div class="col-lg-2 col-md-2">  -->
+            <img src= "../static/media/img/clients/honey-rock.jpg"  alt="honey-rock school" class="clients2">
+          <!-- </div> -->
+		  <!-- <div class="col-lg-2 col-md-2">  -->
+            <img src="../static/media/img/clients/laraday logo.png"  alt="laraday school" class="clients2">
+          <!-- </div> -->
 		  
-		 <div class="col-lg-3 col-md-12">
-            <img src="../static/media/img/clients/olivehall.jpg" style="width:142px !important; margin: auto;" alt="olive hall school">
-          </div>
+		 <!-- <div class="col-lg-2 col-md-2"> -->
+            <img src="../static/media/img/clients/blooming green logo.jpg" alt="Blooming green school" class="clients2">
+          <!-- </div> -->
 		  
-		 <div class="col-lg-3 col-md-12">
-            <img src="../static/media/img/clients/proper.jpg" style="width:142px !important; margin: auto;" alt="proper child school">
-          </div>
+		 <!-- <div class="col-lg-2 col-md-2"> -->
+            <img src="../static/media/img/clients/proper.jpg" alt="proper child school" class="clients2">
+          <!-- </div> -->
 		  
-		  <div class="col-lg-3 col-md-12">
-            <img src="../static/media/img/clients/penielville.jpg" style="width:142px !important; margin: auto;" alt="penielville school">
-          </div>
-		  <div class="col-lg-3 col-md-12">
-            <img src="../static/media/img/clients/pamper logo.jpg" style="width:142px !important; margin: auto;" alt="pamper school">
-          </div>
+		  <!-- <div class="col-lg-2 col-md-2"> -->
+            <img src="../static/media/img/clients/aisl.jpg" alt="A.I.S.L school" class="clients2">
+          <!-- </div> -->
+		  <!-- <div class="col-lg-2 col-md-2"> -->
+            <img src="../static/media/img/clients/pamper logo.jpg" alt="pamper school" class="clients2">
+          <!-- </div> -->
 		  
-		 <div class="col-lg-3 col-md-12">
-            <img src="../static/media/img/clients/ntic.jpg" style="width:142px !important; height: 142px; margin: auto;" alt="ntic school">
-          </div>
+		 <!-- <div class="col-lg-2 col-md-2"> -->
+            <img src="../static/media/img/clients/trinity-logo.png"  alt="ntic school" class="clients2">
+          <!-- </div> -->
 		  
-		 <div class="col-lg-3 col-md-12">
-            <img src="../static/media/img/clients/premier.jpg" style="width:142px !important; margin: auto;" alt="premeir school">
-          </div>
+	
 		  
-        </div>
+        <!-- </div> -->
 
-        <hr/>
-		<br/><br/>
-		<div class="row first-row">
-          <div class="col-lg-6 col-md-12"> 
-            <img src="../static/media/img/clients/this school.jpg" style="width:142px !important; height: 142px; margin: auto;" alt="sapientia ET virtus school">
-          </div>
-		  <div class="col-lg-6 col-md-12">
-            <img src="../static/media/img/clients/daywater man.jpg" style="width:142px !important; height: 142px; margin: auto;" alt="Daywater man school">
-          </div>
-        </div>
+  
+		<!-- <div class="row first-row"> -->
+          <!-- <div class="col-lg-2 col-md-2">  -->
+            <!-- <img src="../static/media/img/clients/this school.jpg" alt="sapientia ET virtus school" class="clients2"> -->
+          <!-- </div> -->
+		
+        <!-- </div> -->
 
-		<hr/><br/><br/>
-		<div class="row first-row"> 
-          <div class="col-lg-3 col-md-12">
-            <img src="../static/media/img/clients/this school.jpg" style="width:142px !important; height: 142px; margin: auto;" alt="sapientai ET virtus school">
-          </div>
-		  <div class="col-lg-3 col-md-12">
-            <img src="../static/media/img/clients/daywater man.jpg "style="width:142px !important; height: 142px; margin: auto;" alt="daywater man school">
-          </div>
+
+		<!-- <div class="row first-row">  -->
+          <!-- <div class="col-lg-2 col-md-2"> -->
+            <!-- <img src="../static/media/img/clients/this school.jpg" alt="sapientai ET virtus school" class="clients2"> -->
+          <!-- </div> -->
+		  <!-- <div class="col-lg-2 col-md-2"> -->
+            <img src="../static/media/img/clients/daywater man.jpg" alt="daywater man school" class="clients2">
+          <!-- </div> -->
 		  
-		 <div class="col-lg-3 col-md-12">
-            <img src="../static/media/img/clients/aisl.jpg" style="width:142px !important; height: 142px; margin: auto;" alt="AISL school">
-          </div>
+		 <!-- <div class="col-lg-2 col-md-2"> -->
+            <!-- <img src="../static/media/img/clients/aisl.jpg" alt="AISL school" class="clients2"> -->
+          <!-- </div> -->
 		  
-		 <div class="col-lg-3 col-md-12">
-            <img src="../static/media/img/clients/banana.jpg" style="width:142px !important; margin: auto;" alt="banana island school">
-          </div>
+		 <!-- <div class="col-lg-2 col-md-2"> -->
+            <img src="../static/media/img/clients/banana.jpg" alt="banana island school" class="clients2">
+          <!-- </div> -->
 		
-        </div>
+        <!-- </div> -->
 		
-		
-		
-		<hr/>
-		<br/><br/>
-		<div class="row first-row">
-          <div class="col-lg-3 col-md-12">
-            <img src="../static/media/img/clients/ntic.jpg" style="width:142px !important; height: 142px; margin: auto;" alt="ntic school">
-          </div>
-          <div class="col-lg-3 col-md-12">
-            <img src="../static/media/img/clients/olivehall.jpg" style="width:142px !important; height: 142px; margin: auto;" alt="olovehall school">
-          </div>
-		  <div class="col-lg-3 col-md-12">
-            <img src="../static/media/img/clients/premier.jpg" style="width:142px !important; height: 100px; margin: auto;" alt="premeir school">
-          </div>
-          <div class="col-lg-3 col-md-12">
-            <img src="../static/media/img/clients/aisa.png" style="width:142px !important; margin: auto;" alt="AISA school">
-          </div>
+		<!-- <div class="row first-row"> -->
+          <!-- <div class="col-lg-2 col-md-2"> -->
+            <img src="../static/media/img/clients/estaport-logo.png" alt="estaport school" class="clients2">
+          <!-- </div> -->
+          <!-- <div class="col-lg-2 col-md-2"> -->
+            <img src="../static/media/img/clients/legacy-logo-3.png"  alt="legacy school" class="clients2">
+          <!-- </div> -->
+	
+        </marquee>
+          
         </div>
 		
       
       </div>
     </section>	
-	
+
 	<br/>
 	
-    <section class="content-section sponsorship" id="sponsors">
-      <div class="container">
-        <h1>TECHNOLOGY PARTNERS</h1>
-        <br>
-        <br>
-        <div class="row first-row">
-   
-		  <div class="col-lg-4 col-md-12">
-            <img src="../static/media/ispace-logo.png" style="width:220px !important; margin: auto;" alt="ispace">
-          </div>
-		 <div class="col-lg-4 col-md-12">
-            <img src="../static/media/proxynet.png" style="width:220px !important; margin: auto;" alt="proxynet">
-          </div>
-          <div class="col-lg-4 col-md-12">
-            <img src="../static/media/smart board.png"  style="width:220px !important; margin: auto;" alt="smart board">
-          </div>
-        </div>
-      
-      </div>
-    </section>
-
+    
 	
     <!-- end footer-bar -->
     <footer id="contact" class="footer">
       <h3>CONTACT INFO</h3>
       <div class="container">
         <div class="row">
+          <div class="col-lg-12 col-md-6" style="margin: 20px auto;">
+            
+            <h5 class="widget-title">ADDRESS</h5>
+            <address class="address">
+              <div class="col-md-12 inner">
+                <h6 class="widget-title">LAGOS</h6>
+              <a>The Proxynet House, 5B Adedeji close,<br> off Opebi road Ikeja ,Lagos</a>
+              </div>
+              <!-- <br> -->
+            <div class="col-md-12 inner2" >
+              <h6 class="widget-title">ABUJA</h6>
+              <a> House 21, Street 693, Off Road 69, <br>
+                Gwarimpa, Abuja </a> 
+            </div>
+            <!-- <br> -->
+              
+            </address>
+          </div>
+
           <div class="col-lg-4 col-md-6">
+
             <h6 class="widget-title">TEL:</h6>
             <address>
               <a href="tel:+2348124019660">ISPACE:+234 812 401 9660</a>
               <br>
               <br>
-              <a href="tel: +234 809 422 1272">Ms. Paschaline: +234 809 422 1272</a> 
+              <a href="tel: +234 911 633 5406">Abuja: +234 911 633 5406</a> 
 			  <br>
               
             </address>
@@ -1112,7 +1149,7 @@
                 <a href="mailto:ispace@proxynetgroup.com">ispaceproxynet@gmail.com</a>
                 <br>
 				<br/>
-                <a href="mailto: paschalinea@proxynetgroup.com">paschaline@proxynetgroup.com</a>
+                <a href="mailto:info@proxynetgroup.com">info@proxynetgroup.com</a>
                 <br>
                 <br>
                 

@@ -5,7 +5,7 @@ body {
 
 /* ---------PoP up menu------------ */
 
- #custom-overlay{
+ /* #custom-overlay{
   position:fixed; 
   top:0px; 
   right:0px;
@@ -15,16 +15,16 @@ body {
   background:rgba(0,0,0,0.5);
   margin: 0 auto;
 
-} 
+}  */
 #overlay{
   position: relative;
   width: 700px !important;
   height: auto !important;
-  background-image: radial-gradient(
-    ellipse at -11.25% -5.47%, 
-    rgb(255, 255, 255,0.9) 0%, 
-    rgb(148, 175, 238,0.9) 30.21%, 
-    rgb(255, 255, 255,0.9) 80.27%) !important;
+   background-image: linear-gradient(rgba(217, 221, 227, 0.7),rgba(217, 221, 227, 0.7),rgba(217, 221, 227, 0.7)  ),
+  url("../static/media/sn2.PNG") !important;
+  background-size: cover !important;
+  background-repeat:no-repeat !important;
+  margin: auto;
   z-index: 1100;
   margin:100px auto;
   border-radius: 7px;
@@ -78,13 +78,13 @@ body {
 
 
   /* -------------------NAVIGATION-------------------- */
-  #hamburger, #cross{
+  /* #hamburger, #cross{
     background-image:radial-gradient(
       ellipse at -11.25% -5.47%, 
-      rgb(64, 123, 255) 0%, 
+      rgb(238, 239, 242) 0%, 
       rgb(64, 123, 255) 30.21%, 
-      rgb(64, 123, 255)80.27%) ;
-  }
+      rgb(243, 245, 248)80.27%) ;
+  } */
   .side-widget{
     background-image: radial-gradient(
       ellipse at -11.25% -5.47%, 
@@ -97,7 +97,7 @@ body {
   .site-l-menu, .site-menu{
     text-decoration: none;
     list-style: none;
-    color: rgb(64, 123, 255) !important ;
+    color: rgb(223, 227, 237) !important ;
     text-shadow:  #1D49E3 0 0.1px 1px;
   }
 
@@ -122,17 +122,35 @@ body {
   }
  
 /* ---------------------HEADER---------------------- */
-  header{
-        background-image: 
+ header{
+        /* background-image: 
         radial-gradient(
       ellipse at -11.25% -5.47%, 
       rgb(255, 255, 255,0.9) 0%, 
       rgb(148, 175, 238,0.9) 30.21%, 
-      rgb(255, 255, 255,0.9) 80.27%
-    ),
-    url("../static/media/sliders/1.jpg") !important;
+      rgba(182, 186, 225, 0.9) 80.27%
+    ), */
+
+    background-image: linear-gradient(rgba(217, 221, 227, 0.7),rgba(217, 221, 227, 0.7),rgba(217, 221, 227, 0.7)  ),
+    url("../static/media/sn2.PNG") !important;
     background-size: cover !important;
     background-repeat:no-repeat !important;
+    margin: auto;
+  }
+  .header{
+    margin: auto;
+
+  }
+
+  .imge-banner{
+    width:90%; border-radius:15px; margin:100px 0px 0px 80px !important;
+  }
+
+  @media (min-width:100px) and (max-width:900px)  {
+    .imge-banner{
+      margin:10px auto 0px !important;
+    }
+    
   }
 
   .transparent{
@@ -147,7 +165,8 @@ body {
     border: none !important;
   }
   .main-text{
-    text-shadow: 0 0 2px #032772;
+    color:#4d5865;
+    text-shadow: 0 1px  1px #032772;
   }
 
 .con-btn{
@@ -179,6 +198,7 @@ body {
   .reg-btn{
     background-color:c !important;
     color: white !important;
+    margin: auto !important;
   }
   /* --------------countdown-------- */
   .countdown{
@@ -250,6 +270,93 @@ body {
 }
 }
 
+/* --------------existing customer------------- */
+
+.first-row{
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.slides1{
+  width: 100% !important;
+  margin: auto;
+  height: 100px;
+  border-radius: 10px;
+  border: rgba(119, 119, 119,0.2) solid 0.2px;
+  padding: 6px;
+  scrolldelay:100;
+  scrollamount:5;
+  scroll-behavior: smooth;
+}
+
+.slides{
+  width: 100% !important;
+  margin: auto;
+  height: 150px;
+  border-radius: 10px;
+  border: rgba(119, 119, 119,0.2) solid 0.2px;
+  padding: 6px;
+  scrolldelay:100;
+  scrollamount:5;
+  scroll-behavior: smooth;
+}
+
+.clients{
+  width:200px !important; 
+  margin: auto;
+  height: 85px;
+  padding: 2%;
+}
+.clients2{
+  width: 142px !important;
+  height: 130px;
+  margin: auto;
+  padding: 2%;
+
+}
+
+@media (min-width:100px) and (max-width: 900px){
+  .slides1{
+    width: 90% !important;
+    margin: auto;
+    height: 80px;
+    border-radius: 10px;
+    border: rgba(119, 119, 119,0.2) solid 0.2px;
+    padding: 6px;
+    scrolldelay:100;
+    scrollamount:5;
+    scroll-behavior: smooth;
+  }
+
+  .slides{
+    /* display: inline; */
+    width: 90% !important;
+    margin: auto;
+    height: 100px;
+    border-radius: 10px;
+    border: rgba(119, 119, 119,0.2) solid 0.2px;
+    padding: 6px;
+  }
+  .clients{
+    width: 150px !important;
+    height: 65px;
+    margin: auto;
+    padding: 2%;
+  }
+  .clients2{
+    width: 122px !important;
+    height: 90px; 
+    margin: auto;
+    padding: 2%;
+
+  }
+  .address{
+    flex-direction: column !important;
+  }
+  .inner,.inner2{
+    margin: auto !important;
+  }
+}
 
   /* -------footer--- */
   .footer{
@@ -258,6 +365,20 @@ body {
     color: #777;
   }
  
+  .address{
+    display: flex !important;
+    justify-content: space-around !important;
+    margin: 15px auto !important;
+    width:50% !important; 
+    
+  }
+  .inner2{
+    margin:10px 10px 10px -150px;
+  }
+  .inner{
+    margin:10px -150px 10px 10px;
+
+  }
 
   .footer-bottom{
     display: flex !important;
